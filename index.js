@@ -14,7 +14,6 @@ const router = require("./routes");
 const app = express();
 
 // Middleware
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.options("*", cors());
 app.use(cors());
 // Other middleware
